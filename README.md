@@ -9,4 +9,5 @@ Use your lock screen as a business card
 
 - javascript
 - canvas
-- qrious
+- qrious javascript library
+
