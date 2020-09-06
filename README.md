@@ -1,11 +1,11 @@
 # IDWallpaper
 Use your lock screen as a business card
 
-## demo
+## Demo
 
 [https://vivirenremoto.github.io/idwallpaper/](https://vivirenremoto.github.io/idwallpaper/)
 
-## technologies
+## Technologies
 
 - javascript
 - canvas
