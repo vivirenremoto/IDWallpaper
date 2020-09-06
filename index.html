@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ID Wallpaper Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css?v=2" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="prev_info">
+
+        <div id="info">
+            <h1>Do you like networking?</h1>
+
+            <p>Use your lock screen as a business card</p>
+
+            <ul>
+                <li>Help the environment, you don't waste paper</li>
+                <li>Quick access, just turn on the phone</li>
+                <li>It's an image, compatible with any phone</li>
+                <li>You don't have to install any app</li>
+            </ul>
+
+            <p><button onclick="create()">CREATE MY CARD</button></p>
+
+        </div>
+
+        <div id="form" style="display:none">
+            <h2>Design your card</h2>
+
+            <p>
+                Text (twitter username)
+                <input type="text" value="@vivirenremoto" id="text" onchange="preview()" onkeyup="preview()">
+            </p>
+
+            <p>
+                Text color
+                <input type="color" value="#ffffff" id="text_color" onchange="preview()">
+            </p>
+
+            <p>
+                Background color 1
+                <input type="color" value="#0000ff" id="bg1_color" onchange="preview()">
+            </p>
+
+            <p>
+                Background color 2
+                <input type="color" value="#000000" id="bg2_color" onchange="preview()" onkeyup="preview()">
+            </p>
+
+            <p>
+                URL in QR (linkedin profile)
+                <input type="text" value="https://www.linkedin.com/in/miquelcamps/" id="url" onchange="preview()">
+            </p>
+
+            <p>
+                Width px
+                <input type="text" value="1080" id="width" onchange="preview()">
+            </p>
+
+            <p>
+                Height px
+                <input type="text" value="2160" id="height" onchange="preview()">
+            </p>
+
+            <p><a class="button" id="download" download="wallpaper.jpg">DOWNLOAD</a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="mobile">
+
+
+        <img src="hand.png">
+    </div>
+
+    <canvas id="canvas" style="display:none">Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <div id="preview"></div>
+
+    <script src="qrious.min.js"></script>
+    <script src="general.js?v=4"></script>
+
+
+</body>
+
+</html>
