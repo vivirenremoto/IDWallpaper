@@ -23,9 +23,10 @@ function preview() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // add text
-    var font_size = parseInt((canvas.width * 90) / 1080);
+    var font_size = document.getElementById('text_size').value;
+    var font_size_css = parseInt((canvas.width * font_size) / 1080);
     ctx.fillStyle = document.getElementById('text_color').value;
-    ctx.font = font_size + 'px Arial';
+    ctx.font = font_size_css + 'px Arial';
 
     var textString = document.getElementById('text').value,
         textWidth = ctx.measureText(textString).width;
